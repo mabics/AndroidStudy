@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image"
-        >
+    android:background="@drawable/image">
 
     <TextView
 
@@ -15,12 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/gridLayout"
-        android:text="@string/_0"
         android:padding="@dimen/button_textSmall"
-        android:textSize="@dimen/button_text"
+        android:text="@string/_0"
         android:textColor="#FFFFFF"
+        android:textSize="@dimen/button_text"
 
-         />
+        />
 
     <GridLayout
         android:id="@+id/gridLayout"
@@ -29,12 +27,11 @@
         android:columnCount="4"
         android:rowCount="5"
 
+        android:useDefaultMargins="true"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
 
-        android:useDefaultMargins="true"
-        >
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/button_del"
@@ -49,18 +46,16 @@
             android:id="@+id/button_staple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_staple"
-            android:textSize="@dimen/button_text"
             android:layout_gravity="fill"
-            />
+            android:text="@string/_staple"
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_division"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_division"
-            android:textSize="@dimen/button_text"
-           />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_multiplication"
@@ -76,8 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_7"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
 
@@ -92,32 +86,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_9"
-            android:textSize="@dimen/button_text"
-             />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_minus"
-            android:textSize="@dimen/button_text"
-           />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_4"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_5"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_6"
@@ -133,63 +123,57 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_plus"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_1"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_2"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_3"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/button_equals"
-            android:layout_rowSpan="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
             android:layout_gravity="fill_vertical"
-            android:textSize="@dimen/button_text"
             android:text="@string/_equals"
-            />
+            android:textSize="@dimen/button_text" />
 
 
         <Button
             android:id="@+id/button_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_0"
-            android:textSize="@dimen/button_text"
-
             android:layout_columnSpan="2"
             android:layout_gravity="fill_horizontal"
 
-           />
+            android:text="@string/_0"
+            android:textSize="@dimen/button_text"
+
+            />
 
         <Button
             android:id="@+id/button_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_point"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
     </GridLayout>
 
