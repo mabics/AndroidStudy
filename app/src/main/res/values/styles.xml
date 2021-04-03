@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeApp" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorPrimaryDark">@color/teal_700</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+         <item name="android:textSize">@dimen/button_text</item>
+    </style>
+
+    <style name="MainLayout">
+        <item name="android:background">@drawable/image</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:backgroundTint">@color/colorButton</item>
+    </style>
+
+    <style name="ButtonStyleOperation" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:backgroundTint">@color/colorButtonOperation</item>
+    </style>
+
+    <style name="ButtonStylePreOperation" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:backgroundTint">@color/colorButton</item>
+        <item name="android:textColor">@color/colorButtonOperation</item>
+    </style>
+
+</resources>

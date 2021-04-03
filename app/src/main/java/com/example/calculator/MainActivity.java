@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.constraint_layout);
+        setContentView(R.layout.activity_main);
         findViews();
         argBehaviour();
         operationBehaviour();
@@ -175,7 +175,10 @@ public class MainActivity extends AppCompatActivity {
             if (operationSign == '+') operationResult = firstArg + secondArg;
             if (operationSign == '-') operationResult = firstArg - secondArg;
             if (operationSign == '*') operationResult = firstArg * secondArg;
-            if (operationSign == '/') operationResult = firstArg / secondArg;
+            if (operationSign == '/') {
+                if (secondArg == 0) operationResult = 0;
+                else operationResult = firstArg / secondArg;
+            }
 
             textView.setText(Integer.toString(operationResult));
 
